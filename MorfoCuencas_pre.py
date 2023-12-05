@@ -1068,7 +1068,7 @@ class MorfoCuencasDialog(QtWidgets.QDialog, FORM_CLASS):
         altMax = stats.maximumValue
         altMin = stats.minimumValue
         S0 = altMax - altMin
-        tc_kirpich = 0.066 * (longCauceppal_m/(S0**0.5))**0.77
+        tc_kirpich = 0.4*(longCauceppal_km**0.77)/(pendMedCauce_porcAlt**0.385)
 
             #METODO DE GIANDOTI
         tc_giandoti = (4*(area_km**0.5)+1.5*longCauceppal_km)/(25.3*(pendMedCauce_m*longCauceppal_km)**0.5) 
