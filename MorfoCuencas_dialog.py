@@ -1041,7 +1041,7 @@ class MorfoCuencasDialog(QtWidgets.QDialog, FORM_CLASS):
         'OPTIONS' : '', 
         'OUTPUT' : pend_cuenca, 
         'SCALE' : 1, 
-        'ZEVENBERGEN' : False 
+        'ZEVENBERGEN' : True 
         }
         
         ret = processing.run('gdal:slope', parameters)
